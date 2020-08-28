@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+</head>
+
+<body>
+
+    <button class="button" value="true" onclick="dosomething(this)">A</button>
+    <button class="button" value="false" onclick="dosomething(this)">B</button>
+    <button class="button" value="false" onclick="dosomething(this)">C</button>
+    <script>
+        for (var i = 0; i < buttons.length; i++) {
+            (function (index) {
+                buttons[index].onclick = function () {
+                    console.log("I am button " + index);
+                };
+            })(i)
+        }
+
+        function dosomething(element) {
+            alert("value is " + element.value); //you can print any value like id,class,value,innerHTML etc.
+        };
+    </script>
+</body>
+
+</html>

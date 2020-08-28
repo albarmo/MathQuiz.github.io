@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <title>Math-Quiz</title>
+</head>
+
+<body>
+
+
+    <div class="timeDash">
+        <h4>TIME</h4>
+        <h2 id="countdowntimer">100</h2>
+    </div>
+
+
+    <!----question ------->
+    <br>
+    <div class="box-question center">
+        <h3 id="nums">Qusestion 1</h3>
+        <h1 id="Qst"></h1>
+
+    </div>
+    <!----give more space ------->
+    <div id="clear">.</div>
+
+    <!----answer ------->
+    <div class="box-answer center">
+        <center>
+
+            <div class="buttons">
+                <button onclick="playaudio()" class="button" value="1" onclick="playerAnswer(this)">A</button>
+                <button class="button" value="2" onclick="playerAnswer(this)">B</button>
+                <button class="button" value="3" onclick="playerAnswer(this)">C</button>
+                <!-- <button onclick="playAudio()" id="btn2"><span id="choice2"></span>c</button> -->
+            </div>
+
+            <!-- audio -->
+            <audio id="myAudio">
+                <source src="Correct-answer.mp3" type="audio/mpeg" autoplay>
+                Your browser does not support the audio element.
+            </audio>
+
+        </center>
+    </div>
+
+    <!----footer ------->
+    <footer class="center">
+        <br> <a>2020 By Albarmo</a>
+    </footer>
+
+
+    <!----the script link------->
+    <!-- <script src="main.js"></script> -->
+    <script src="main.js"></script>
+
+    <!-- <script>
+        let butonTest = document.getElementById('btn2')
+        console.log(butonTest)
+    </script> -->
+
+</body>
+
+</html>
